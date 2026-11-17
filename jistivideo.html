@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Live Science Fight</title>
+</head>
+
+<body>
+    <h2>Live Video Call</h2>
+    <div id="meet"></div>
+    <script src="https://meet.jit.si/external_api.js"></script>
+    <script>
+        const domain = "meet.jit.si";
+        const options = {
+            roomName: "PYBT_Fight",
+            width: 700,
+            height: 500,
+            parentNode: document.querySelector('#meet')
+        };
+        const api = new JitsiMeetExternalAPI(domain, options);
+    </script>
+</body>
+
+</html>
